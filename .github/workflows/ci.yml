@@ -1,0 +1,66 @@
+# .github/workflows/ci.yml
+# Apex Technical Authority Standard CI/CD (2025/2026)
+
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-lint-test:
+    name: Build, Lint & Test
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read # Required for actions/checkout
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+
+      - name: Install Dependencies
+        id: install-deps
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint and Format Check (Biome)
+        id: lint-check
+        # This script should be defined in package.json as: "biome check ."
+        run: pnpm lint
+
+      - name: Run Unit & Integration Tests (Vitest)
+        id: run-tests
+        # This script should be defined in package.json as: "vitest run --coverage"
+        run: pnpm test
+
+      - name: Build Production Bundle (WXT)
+        id: build-bundle
+        # This script should be defined in package.json as: "wxt build"
+        run: pnpm build
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: extension-build-${{ github.sha }}
+          # WXT default output path. Adjust if using a different build tool.
+          path: |
+            .output/chrome-mv3/
+            .output/firefox-mv2/
+          retention-days: 7
