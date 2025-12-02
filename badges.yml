@@ -1,0 +1,29 @@
+badges:
+  - name: Build Status
+    image_url: "https://img.shields.io/github/actions/workflow/status/chirag127/ZenRead-AI-Powered-Distraction-Free-Reader-Browser-Extension/ci.yml?branch=main&style=flat-square&label=build"
+    link_url: "https://github.com/chirag127/ZenRead-AI-Powered-Distraction-Free-Reader-Browser-Extension/actions/workflows/ci.yml"
+    markdown: "[![Build Status](https://img.shields.io/github/actions/workflow/status/chirag127/ZenRead-AI-Powered-Distraction-Free-Reader-Browser-Extension/ci.yml?branch=main&style=flat-square&label=build)](https://github.com/chirag127/ZenRead-AI-Powered-Distraction-Free-Reader-Browser-Extension/actions/workflows/ci.yml)"
+  - name: Code Coverage
+    image_url: "https://img.shields.io/codecov/c/github/chirag127/ZenRead-AI-Powered-Distraction-Free-Reader-Browser-Extension/main?style=flat-square"
+    link_url: "https://codecov.io/gh/chirag127/ZenRead-AI-Powered-Distraction-Free-Reader-Browser-Extension"
+    markdown: "[![Code Coverage](https://img.shields.io/codecov/c/github/chirag127/ZenRead-AI-Powered-Distraction-Free-Reader-Browser-Extension/main?style=flat-square)](https://codecov.io/gh/chirag127/ZenRead-AI-Powered-Distraction-Free-Reader-Browser-Extension)"
+  - name: Language
+    image_url: "https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"
+    link_url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    markdown: "[![Language](https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)"
+  - name: Extension Framework
+    image_url: "https://img.shields.io/badge/Framework-WXT-blue?style=flat-square&logo=vercel&logoColor=white"
+    link_url: "https://wxt.dev/"
+    markdown: "[![Extension Framework](https://img.shields.io/badge/Framework-WXT-blue?style=flat-square&logo=vercel&logoColor=white)](https://wxt.dev/)"
+  - name: Lint & Format
+    image_url: "https://img.shields.io/badge/Lint_Format-Biome-0A7B76?style=flat-square&logo=biome&logoColor=white"
+    link_url: "https://biomejs.dev/"
+    markdown: "[![Lint & Format](https://img.shields.io/badge/Lint_Format-Biome-0A7B76?style=flat-square&logo=biome&logoColor=white)](https://biomejs.dev/)"
+  - name: License
+    image_url: "https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey?style=flat-square"
+    link_url: "https://creativecommons.org/licenses/by-nc/4.0/"
+    markdown: "[![License](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey?style=flat-square)](https://creativecommons.org/licenses/by-nc/4.0/)"
+  - name: GitHub Stars
+    image_url: "https://img.shields.io/github/stars/chirag127/ZenRead-AI-Powered-Distraction-Free-Reader-Browser-Extension?style=flat-square&label=Stars&logo=github"
+    link_url: "https://github.com/chirag127/ZenRead-AI-Powered-Distraction-Free-Reader-Browser-Extension/stargazers"
+    markdown: "[![GitHub Stars](https://img.shields.io/github/stars/chirag127/ZenRead-AI-Powered-Distraction-Free-Reader-Browser-Extension?style=flat-square&label=Stars&logo=github)](https://github.com/chirag127/ZenRead-AI-Powered-Distraction-Free-Reader-Browser-Extension/stargazers)"
