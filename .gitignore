@@ -1,38 +1,46 @@
-# Node.js
-node_modules/
-dist/
-build/
-out/
-.env
-.env.local
-.env.*.local
-*.log
+# Node / Browser Extension Dependencies
 npm-debug.log*
-yarn-debug.log*
+npm-shrinkwrap.json
 yarn-error.log*
-pnpm-debug.log*
+node_modules/
+.pnp
+.pnp.js
 
-# Browser Extension specific (e.g., WXT)
-.wxt/
-
-# Bundler/Vite specific
-.vite/
+# Build output
+build/
+dist/
+.parcel-cache/
+*.local
 
 # Editor directories and files
-.idea/
 .vscode/
-*.sublime-project
-*.sublime-workspace
+.idea/
+*.iml
+*.ipr
+*.iws
 
-# OS-specific files
+# IDE Settings
+.settings/
+.project
+.classpath
+.DS_Store
+
+# Test files
+coverage/
+*.test.js
+*.spec.js
+__snapshots__/
+
+# Environment variables (should not be committed)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Other
+*.log
+*.tmp
+*.swp
 .DS_Store
 Thumbs.db
-
-# Test coverage
-coverage/
-
-# Temporary files
-tmp/
-
-# Uploads or generated content
-uploads/
